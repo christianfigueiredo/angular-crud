@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnChanges, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-button',
@@ -7,6 +7,31 @@ import { Component, Input } from '@angular/core';
 })
 export class ButtonComponent {
 
-  @Input() textButton!: string;
-  
-}
+  @Input() textButton: string = 'LifeCicle Hooks';
+
+    constructor() {
+      console.log('construído');}
+
+      ngOnchanges(){
+        console.log('alterado');
+      }
+
+      ngOnInit(){
+        console.log('inicializado');
+      }
+
+      ngDoCheck(){
+        console.log('doCheck');
+      }
+
+      ngOnDestroy(){
+        window.alert('destruido');
+
+      }
+
+      teste(){
+        console.log('botao clicado');
+      }
+     }
+
+
