@@ -7,31 +7,19 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 })
 export class ButtonComponent {
 
-  @Input() textButton: string = 'LifeCicle Hooks';
+  @Input() textButton!: string ;
+  @Input() size: string = 'auto';
 
     constructor() {
-      console.log('construído');}
-
-      ngOnchanges(){
-        console.log('alterado');
-      }
+      console.log('construído');
+    }     
 
       ngOnInit(){
         console.log('inicializado');
       }
 
-      ngDoCheck(){
-        console.log('doCheck');
-      }
+    
 
-      ngOnDestroy(){
-        window.alert('destruido');
-
-      }
-
-      teste(){
-        console.log('botao clicado');
-      }
      }
 
 

@@ -1,0 +1,69 @@
+.area-login-background
+{
+    height: 100%;
+    width: 55%;    
+    display: block;
+    float:left;
+    background-image: url('../../../assets/background-login.png');
+    background-color: var(--primary-color);
+    background-size: 100% auto;
+    background-position: center bottom;
+    background-repeat: no-repeat;
+}
+
+.area-form
+{
+    width: 45%;
+    float: left;
+    height: 100%;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 767px) {.area-form {width: 100%;}}
+
+.titulo{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 7px;
+    color: var(--primary-color);
+    padding: 0;
+    margin-bottom: 6px;
+}
+
+.subtitulo{
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 2px;
+    color: var(--gray-color);
+    padding: 0;
+    margin: 0px 0px 30px 0px;
+}
+
+.input-form{
+    width: 100%;
+    outline: none;
+    border: 1px solid #00000000; 
+    border-radius: 4px;
+    margin-bottom: 32px;
+    padding: 8px 10px;
+    transition: 0.3s linear all;
+    box-shadow: inset 1px 1px 2px #aaadb980, inset -1px -1px 2px #d8d8d8b0;
+    &:focus
+        {
+        border: 1px solid var(--primary-color);
+    }
+}
+
+.footer{
+    position: absolute;
+    bottom: 4px;
+    color: var(--primary-color);
+    font-size: 10px;    
+}
