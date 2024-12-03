@@ -7,7 +7,7 @@ import { Component, Input, OnChanges, OnInit } from '@angular/core';
 })
 export class ButtonComponent {
 
-  @Input() textButton!: string ;
+  @Input() textButton: string ;
   @Input() size: string = 'auto';
 
     constructor() {
